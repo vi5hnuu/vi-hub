@@ -2,7 +2,18 @@
   "name": "@vi-hub/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx",
+    "start": "npx nx serve vi-hub --configuration=development",
+    "test": "npx nx run-many --all --target=test --parallel --configuration=development",
+    "build": "npx nx build vi-hub --configuration=dev",
+    "test-server": "angular-http-server -p 8000 --cors --path ./dist/apps/digi-forms --open",
+    "build:development": "npx nx build vi-hub --configuration=dev",
+    "build:sandbox": "npx nx build vi-hub --configuration=sandbox",
+    "build:prod": "npx nx build vi-hub --configuration=production",
+    "watch": "nx build --watch --configuration development",
+    "start-lan": "nx serve --port 8083 --host 0.0.0.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.1.0",

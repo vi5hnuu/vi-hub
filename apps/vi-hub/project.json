@@ -45,18 +45,62 @@
               "maximumError": "4kb"
             }
           ],
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "apps/vi-hub/src/environments/environment.ts",
+              "with": "apps/vi-hub/src/environments/environment.production.ts"
+            }
+          ]
+        },
+        "sandbox": {
+          "namedChunks": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/main-app/src/environments/environment.ts",
+              "with": "apps/main-app/src/environments/environment.sandbox.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "dev": {
+          "namedChunks": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/main-app/src/environments/environment.ts",
+              "with": "apps/main-app/src/environments/environment.development.ts"
+            }
+          ],
           "outputHashing": "all"
         },
         "development": {
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true,
-          "fileReplacements": [
-            {
-              "replace": "apps/vi-hub/src/environments/environment.ts",
-              "with": "apps/vi-hub/src/environments/environment.development.ts"
-            }
-          ]
         }
       },
       "defaultConfiguration": "production"
