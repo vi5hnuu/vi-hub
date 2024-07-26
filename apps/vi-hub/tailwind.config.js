@@ -133,6 +133,9 @@ module.exports = {
           "99": "#fffbff",
           "100": "#ffffff",
         },
+      },
+      backgroundImage:{
+        fadeVerticalExtremeEdges:'linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0) 5%, rgba(1,195,244,0) 95%, rgba(255,255,255,1) 100%)'
       }
     },
   },
