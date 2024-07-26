@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@env": ["apps/vi-hub/src/environments/environment.ts"],
       "@portfolio-v1": ["libs/src/index.ts"]
     }
   },

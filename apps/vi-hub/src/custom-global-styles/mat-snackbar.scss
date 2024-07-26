@@ -1,0 +1,6 @@
+.mat-snack-reset .mdc-snackbar__surface.mat-mdc-snackbar-surface {
+  @apply p-0 shadow-lg rounded-none overflow-hidden bg-transparent;
+  .mat-mdc-snack-bar-label.mdc-snackbar__label {
+    @apply p-0;
+  }
+}

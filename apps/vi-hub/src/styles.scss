@@ -1,5 +1,11 @@
+@import './custom-global-styles/index';
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+}
 /* You can add global styles to this file, and also import other style files */

@@ -2,7 +2,7 @@
   "name": "vi-hub",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "vi",
   "sourceRoot": "apps/vi-hub/src",
   "tags": [],
   "targets": {

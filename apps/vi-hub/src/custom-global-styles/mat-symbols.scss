@@ -1,0 +1,36 @@
+html {
+  --font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 200, 'opsz' 48;
+}
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp {
+  font-variation-settings: var(--font-variation-settings);
+}
+
+//NOTE : to override this default behaviour use `font-variation-settings: var(--font-variation-settings), 'FILL' $, 'wght' $, 'GRAD' $, 'opsz' $`
+// always use var(--font-variation-settings) to avoid using same properties again and again
+// (commonly used classes) Example
+
+.mat-symbol-w-700 {
+  &.material-symbols-outlined,
+  &.material-symbols-rounded,
+  &.material-symbols-sharp {
+    font-variation-settings: var(--font-variation-settings), 'wght' 700;
+  }
+}
+
+.mat-symbol-no-fill {
+  &.material-symbols-outlined,
+  &.material-symbols-rounded,
+  &.material-symbols-sharp {
+    font-variation-settings: var(--font-variation-settings), 'FILL' 0;
+  }
+}
+
+.mat-symbol-fill {
+  &.material-symbols-outlined,
+  &.material-symbols-rounded,
+  &.material-symbols-sharp {
+    font-variation-settings: var(--font-variation-settings), 'FILL' 1;
+  }
+}

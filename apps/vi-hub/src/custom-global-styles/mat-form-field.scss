@@ -1,0 +1,11 @@
+//remove right border if required from mat field notch(mid section)
+.mat-notch-border-r-none.mat-mdc-form-field.mat-mdc-form-field-type-mat-input.mat-mdc-form-field-has-icon-suffix.mat-form-field-appearance-outline
+  .mdc-notched-outline__notch {
+  @apply border-r-0;
+}
+
+//remove tooltip from mat-form-field
+.no-tooltip
+  .mat-mdc-form-field-subscript-wrapper.mat-mdc-form-field-bottom-align {
+  @apply hidden;
+}
