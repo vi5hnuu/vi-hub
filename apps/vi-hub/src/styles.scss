@@ -5,3 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+.mask-t-edge{
+  mask-image: linear-gradient(to top, transparent 2%, black 100%);
+}
+.mask-b-edge{
+  mask-image: linear-gradient(to top,black 0%, transparent 98%);
+}

@@ -23,7 +23,7 @@
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/vi-hub/public"
+            "input": "public"
           }
         ],
         "styles": [
