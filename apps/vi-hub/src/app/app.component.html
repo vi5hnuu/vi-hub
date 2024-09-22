@@ -1,1 +1,30 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="size-full">
+
+  <router-outlet></router-outlet>
+</div>
+
+<!--<ng-template *ngIf="httpState['canActivate'] as transitionState">-->
+<!--  <div-->
+<!--    *ngIf="transitionState.loading"-->
+<!--    class="size-full bg-white flex flex-col items-center gap-3 justify-center text-xl"-->
+<!--  >-->
+<!--    <img-->
+<!--      class="w-64"-->
+<!--      src="loading_kyc.svg"-->
+<!--      alt="kyc loading animation"-->
+<!--    />-->
+<!--    <div class="flex items-center">-->
+<!--      <p class="!m-0 pr-8 font-light">initializing</p>-->
+<!--      <span class="dot-pulse"></span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div-->
+<!--    *ngIf="transitionState.error"-->
+<!--    class="size-full flex flex-col gap-4 bg-error-70 items-center justify-center text-4xl text-white"-->
+<!--  >-->
+<!--    {{ transitionState.error }}-->
+<!--    <button mat-flat-button class="!text-3xl" (click)="tryRerouting()">-->
+<!--      Retry-->
+<!--    </button>-->
+<!--  </div>-->
+<!--</ng-template>-->

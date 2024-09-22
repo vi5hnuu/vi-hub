@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
-import {PortfolioViComponent} from "./portfolio-vi/portfolio-vi.component";
+import {ViPortfolioComponent} from "./vi-portfolio/vi-portfolio.component";
 
 export const portfolioViRoutes: Route[] = [
-  { path: '', component: PortfolioViComponent },
+  { path: '', component: ViPortfolioComponent },
 ];
