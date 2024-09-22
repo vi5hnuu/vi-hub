@@ -1,0 +1,15 @@
+.mat-dialog-rounded-0 .mat-mdc-dialog-surface.mdc-dialog__surface {
+  @apply rounded-none;
+}
+.mat-dialog-rounded-sm .mat-mdc-dialog-surface.mdc-dialog__surface {
+  @apply rounded-sm;
+}
+.mat-dialog-rounded-md .mat-mdc-dialog-surface.mdc-dialog__surface {
+  @apply rounded-md;
+}
+.mat-dialog-rounded-lg .mat-mdc-dialog-surface.mdc-dialog__surface {
+  @apply rounded-lg;
+}
+.mat-dialog-rounded-xl .mat-mdc-dialog-surface.mdc-dialog__surface {
+  @apply rounded-xl;
+}

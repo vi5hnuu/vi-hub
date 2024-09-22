@@ -1,0 +1,41 @@
+<div class="relative flex flex-col items-center overflow-hidden">
+  <div
+    [style.width.%]="barWidth"
+    class="h-1 w-full self-start transition-all {{ typeClass.bar }}"
+  ></div>
+  <div
+    class="flex items-center w-full {{
+      typeClass.content
+    }} px-3 py-4 gap-6 bg-white"
+  >
+    <div class="flex-1 flex items-center gap-2 text-inherit">
+      <img
+        *ngIf="typeClass.icon"
+        [src]="typeClass.icon"
+        class="size-6"
+        alt="snack icon"
+      />
+      <p class="!m-0 max-w-[38rem] text-sm">{{ data.text }}</p>
+    </div>
+    <div>
+      <button
+        *ngIf="data.action?.title"
+        class="px-2 py-1 transition-all rounded-full text-[12px] {{
+          typeClass.action
+        }}"
+        (click)="closeSnackbar(true)"
+      >
+        {{ data.action?.title ?? 'click me' }}
+      </button>
+      <button
+        *ngIf="!data.action?.title"
+        class="size-4 rounded-full flex items-center justify-center {{
+          typeClass
+        }}"
+        (click)="closeSnackbar()"
+      >
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+  </div>
+</div>
