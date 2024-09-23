@@ -19,7 +19,7 @@
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/vi-hub/public"
+            "input": "public"
           }
         ],
         "styles": ["apps/vi-hub/src/styles.scss"],
