@@ -6,6 +6,7 @@
   <div class="relative flex-1 flex flex-col overflow-y-scroll rounded-md scrollbar-md">
     <div class="mask-t-edge bg-neutralVariant-95 w-full h-4 sticky top-0 left-0">&nbsp;</div>
     <div class="flex flex-col overflow-visible mr-2 gap-4">
+      <!-- Header -->
       <div class="bg-white rounded-lg p-12 grid grid-cols-10 bg-[url('/me.jpg')] bg-bottom bg-cover">
         <div class="col-span-6">
           <div class="mb-4">
@@ -15,6 +16,20 @@
           <p class="text-xl text-justify">As a Full Stack Developer, I craft digital dreams by bringing innovative ideas to life across Android, web, and backend platforms. My focus is on building efficient, scalable solutions that developers love to collaborate on.</p>
         </div>
         <div class="col-span-4"></div>
+      </div>
+
+      <!--   projects   -->
+      <div class="p-12 flex flex-col gap-6 bg-white rounded-lg">
+        <div class="text-center flex flex-col">
+          <h3 class="text-6xl">Projects</h3>
+          <p class="text-2xl">Crafting Digital Solutions: Sleek Websites, Powerful Backend Services, and Cutting-Edge Mobile Apps with Android & Flutter</p>
+        </div>
+        <div>
+          <div *ngFor="let repo of gitRepoService.repositories"
+               class="border border-secondary-20 rounded-md p-4">
+            {{repo.name}}
+          </div>
+        </div>
       </div>
       <p>infos infos infos infos infos infos infos infos infos infos infos infos infos
         infos infos infos infos infos infos infos infos infos infos infos infos infos
